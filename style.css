@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    scroll-behavior: smooth;
+}
+.centered {
+    text-align: center;
+}
+#catPageBody {
+    text-align: center;
+    background-color: #5D4E6D;
+}
+#mainPageBody {
+    background-color: #9CBFA7;
+
+}
+
+.catList {
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.2s;
+}
+.catPic {
+    display: flex;
+    max-width: 600px;
+    margin-bottom: 150px;
+    border: 5px solid black;
+    border-radius: 10px;
+    transition: 0.2s;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.catHeader {
+    display: flex;
+    background-color: #9CBFA7;
+    color: black;
+    height: 140px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: 0.2s;
+    z-index: 5;
+    box-shadow: 2px 2px 4px #000000;
+
+}
+
+.navContainer {
+    display: flex;
+    max-width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #9CBFA7;
+
+}
+.catNav {
+    width: 25%;
+    display: flex;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+.catNav:hover {
+    background-color: white;
+    color: #8FA998;
+}
+
+.catNavLastItem {
+    border-right: none;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+.title {
+    display: flex;
+    font-size: 75px;
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff;
+    background-color: #8FA998;
+    width: 100%;
+    color: white;
+    font-family:monospace;
+    font-weight: 300;
+    transition: 0.2s;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catHero {
+    display: flex;
+    margin-top: 100px;
+    max-width: 80%;
+    height: auto;
+}
+.catHelp {
+    font-size: 35px;
+    width: 200px;
+    top: 150px;
+    color: white;
+}
+.catSec1 {
+    background-color: #F2F0E9;
+
+}
+.catPara {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+@media screen and (max-width: 800px) {
+    .catHeader {
+        margin-top: 0;
+        height: 120px;
+    }
+    .catHeaderScrolled {
+        height: 120px;
+    }
+    .title {
+        display: flex;
+        font-size: 35px;
+        text-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff;
+        background-color: #8FA998;
+        width: 100%;
+        color: white;
+        font-family:monospace;
+        font-weight: 300;
+        transition: 0.2s;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        padding-top: 25px;
+    }
+    .titleScrolled {
+        margin-top: 25px;
+        padding-top: 0px;    
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0;
+}
+    }
+    .catNav {
+        width: 100%;
+        font-size: 18px;
+        align-items: center;
+        height: auto;
+        justify-content: space-around;
+    }
+    .titleScrolled {
+        position:initial ; 
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        
+    }
+    .navContainer {
+        justify-content: space-around;
+        width: 100%;
+
+    }
+    .catPic {
+        width: 80%;
+        justify-content: center;
+        transition: 0.2s;
+        display: inline-block;
+    }
+    .catList {
+        justify-content: center;
+        margin-top: 180px;
+        transition: 0.2s;
+    }
+    .catNavLastItem {
+        border-right: none;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
