@@ -43,11 +43,9 @@
 .catHeader {
     display: flex;
     background-color: #9CBFA7;
-    color: black;
     height: 140px;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     position: fixed;
     width: 100%;
     top: 0;
@@ -59,11 +57,12 @@
 
 .navContainer {
     display: flex;
-    max-width: 70%;
+    max-width: 75%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 100%;
     background-color: #9CBFA7;
+    align-items: center;
 
 }
 .catNav {
@@ -75,18 +74,13 @@
     font-weight: 300;
     color: white;
     text-align: center;
-    justify-content: center;
     transition: 0.2s;
+    align-items: center;
+    height: 100%;
 }
 .catNav:hover {
     background-color: white;
     color: #8FA998;
-}
-
-.catNavLastItem {
-    border-right: none;
-    padding-right: 5px;
-    padding-left: 10px;
 }
 
 .title {
@@ -103,7 +97,6 @@
     align-items: center;
     padding-bottom: 10px;
 }
-
 
 .heroContainer {
     display: flex;
@@ -164,14 +157,7 @@
         padding-left: 0px;
         padding-right: 0px;
         padding-bottom: 0;
-}
-    }
-    .catNav {
-        width: 100%;
-        font-size: 18px;
-        align-items: center;
-        height: auto;
-        justify-content: space-around;
+
     }
     .titleScrolled {
         position:initial ; 
@@ -180,11 +166,7 @@
         padding-top: 0;
         
     }
-    .navContainer {
-        justify-content: space-around;
-        width: 100%;
 
-    }
     .catPic {
         width: 80%;
         justify-content: center;
@@ -196,8 +178,4 @@
         margin-top: 180px;
         transition: 0.2s;
     }
-    .catNavLastItem {
-        border-right: none;
-        padding-right: 0px;
-        padding-left: 0px;
-    }
+}
